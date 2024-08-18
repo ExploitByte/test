@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="messages.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <button class="back-btn" onclick="window.location.href='dashboard.html'">Back</button>
+        <h1>Messages</h1>
+
+        <div class="main-content">
+            <div class="chat-list">
+                <button class="btn" id="new-chat-btn">New Chat</button>
+                <div id="chat-tabs"></div>
+            </div>
+
+            <div id="chat-window" class="chat-window">
+                <!-- Chat messages will appear here -->
+            </div>
+        </div>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Enter The Username Or LNBTI Student ID</h2>
+                <input type="text" id="friend-username" placeholder="Username or Student ID">
+                <button id="add-friend-btn">Add Friend</button>
+                <button id="popup-close-btn">Close</button>
+            </div>
+        </div>
+
+        <div id="success-popup" class="success-popup">
+            <div class="success-popup-content">
+                <p id="success-message"></p>
+                <button id="success-popup-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="messages.js"></script>
+</body>
+</html>

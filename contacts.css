@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../path/to/your/background/image.jpg'); /* Adjust path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.wrapper {
+    width: 60%; /* Adjust width to make it smaller */
+    max-width: 800px; /* Optional: limit maximum width */
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure proper stacking */
+    z-index: 1; /* Ensure it's above the background */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.contact-form, .saved-contacts-container {
+    margin-top: 20px;
+}
+
+.form-label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.saved-contacts-container {
+    margin-top: 20px;
+}
+
+.saved-contact-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 8px 16px; /* Adjust padding for a smaller button */
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size */
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
